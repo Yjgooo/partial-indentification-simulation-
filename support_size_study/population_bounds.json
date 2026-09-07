@@ -1,0 +1,32 @@
+{
+  "2": {
+    "aux_lower": 0.0475,
+    "aux_upper": 0.1125,
+    "noaux_lower": -0.001561242275,
+    "noaux_upper": 0.14,
+    "noaux_status": "certified K=2 existing study",
+    "aux_width": 0.065,
+    "noaux_width": 0.14156124227500003,
+    "width_reduction_fraction_best_found": 0.5408347726016027
+  },
+  "4": {
+    "aux_lower": 0.036009232217197706,
+    "aux_upper": 0.1251068885116336,
+    "noaux_lower": -0.07126681923135707,
+    "noaux_upper": 0.16032050885395888,
+    "noaux_status": "best found; 24/24 starts stable",
+    "aux_width": 0.08909765629443589,
+    "noaux_width": 0.23158732808531596,
+    "width_reduction_fraction_best_found": 0.6152740435711033
+  },
+  "16": {
+    "aux_lower": 0.03293650891783245,
+    "aux_upper": 0.1351041390210617,
+    "noaux_lower": -0.09801499470082395,
+    "noaux_upper": 0.2015577117517738,
+    "noaux_status": "best found; nonconvex multistart, not globally certified",
+    "aux_width": 0.10216763010322924,
+    "noaux_width": 0.29957270645259776,
+    "width_reduction_fraction_best_found": 0.658955479245585
+  }
+}

@@ -331,7 +331,14 @@ def solve_debiased_value(
     w_n: float,
     face_tolerance: float = 1e-8,
 ) -> PenaltySolve:
-    """Voronin-inspired exact-L1 penalty followed by max-t debiasing."""
+    """Voronin-inspired exact-L1 penalty followed by max-t debiasing.
+
+    Each substantive inequality is divided by its Euclidean row norm before
+    the L1 slack penalty is applied. This makes the numerical penalty invariant
+    to arbitrary positive rescaling of a displayed constraint. The first row,
+    which only links the epigraph variable to the endpoint objective, remains
+    unnormalized and receives unit rather than ``w_n`` weight.
+    """
     matrix = np.asarray(matrix, dtype=float)
     rhs = np.asarray(rhs, dtype=float)
     q_constraints, n_x = matrix.shape
